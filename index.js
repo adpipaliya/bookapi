@@ -9,7 +9,7 @@ mongoose.connect("mongodb+srv://abhi0501:abhi0501@cluster0.6lfue.mongodb.net/boo
         const app = express();
         app.use(bodyParser.urlencoded({extended:true}));
         app.use(express.json());
-        app.use("/bookapi",route);
+        app.use("/api",route);
         app.listen(process.env.PORT || 3000,()=>{
             console.log("Server Started...!!!")
         })
