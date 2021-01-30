@@ -7,21 +7,11 @@ const schema = mongoose.Schema({
         minlength:3
     },
     qty:{
-        type:Number,
+        type:String,
         required:true,
         minlength:1
-    },
-    authors:{
-        type:Array
-    },
-    years:{
-        birthyear:{
-            type:Number
-        },
-        deathyear:{
-            type:Number
-        }
     }
+    
     // name:String,
     // qty:Number
 },{timestamps:true});
